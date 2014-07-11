@@ -18,7 +18,7 @@ Building Dockerfile:
 `docker build -t cloudspace/utm-stripper .`
 
 Running Dockerfile:
-`docker run -ti cloudspace/utm-stripper http://domain.com/url/path?utm_campaign=fo%26utm_feed=bar`
+`docker run -ti cloudspace/utm-stripper http://domain.com/url/path?utm_campaign=foo%26utm_feed=bar`
 
 Finding docker images:
 `docker images -a`
