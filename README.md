@@ -15,10 +15,13 @@ Verify with (should show “not a dynamic executable”):
 `ldd stripper`
 
 Building Dockerfile:
-`docker build -t cloudspace/utm-stripper .`
+`docker build -t cloudspace/utm-stripper-go .`
 
 Running Dockerfile:
-`docker run -ti cloudspace/utm-stripper http://domain.com/url/path?utm_campaign=foo%26utm_feed=bar`
+`docker run -ti cloudspace/utm-stripper-go http://domain.com/url/path?utm_campaign=foo%26utm_feed=bar`
+
+Pushing docker image:
+`docker push cloudspace/utm-stripper-go`
 
 Finding docker images:
 `docker images -a`
